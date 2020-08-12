@@ -27,9 +27,10 @@ function reverseAll(arr) {
   for (let i = arr.length - 1; i >= 0; i--) {
     let newStr = "";
     for (let j = arr[i].length - 1; j >= 0; j--) {
-      newStr = newStr + arr[i][j];
+      newStr = newStr + arr[i][j]; //alexei[5]
     }
     newArr.push(newStr);
+    // newArr.push(arr[i]);
   }
   return newArr;
 }

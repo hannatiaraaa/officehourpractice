@@ -41,23 +41,6 @@ ATURAN CODING:
 //   return finalName;
 // }
 
-function arrayMerge(firstData, secondData) {
-  const finalName = [...firstData];
-
-  for (let i = 0; i < secondData.length; i++) {
-    let isDoubled = false;
-    for (let j = 0; j < firstData.length; j++) {
-      if (secondData[i] === firstData[j]) {
-        isDoubled = true;
-      }
-    }
-    if (isDoubled === false) {
-      finalName.push(secondData[i]);
-    }
-  }
-  return finalName;
-}
-
 // function arrayMerge(firstData, secondData) {
 //   const finalName = [...firstData];
 
@@ -74,6 +57,25 @@ function arrayMerge(firstData, secondData) {
 //   }
 //   return finalName;
 // }
+
+function arrayMerge(firstData, secondData) {
+  const finalName = firstData;
+
+  for (let i = 0; i < secondData.length; i++) {
+    //loop untuk second data
+    let isDoubled = false;
+    for (let j = 0; j < firstData.length; j++) {
+      //loop untuk menyamakan second data ke masing2 first data
+      if (secondData[i] === firstData[j]) {
+        isDoubled = true;
+      }
+    }
+    if (isDoubled === false) {
+      finalName.push(secondData[i]);
+    }
+  }
+  return finalName;
+}
 
 // Test cases
 

@@ -50,8 +50,6 @@ function changeSpacesWith(str, to) {
     }
   }
   console.log(newString);
-  // const newString = str.replace(" ", to);
-  // console.log(newString);
 }
 
 function cutString(str) {

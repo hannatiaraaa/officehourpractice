@@ -32,21 +32,38 @@ tinggi kotak sesuai dengan nilai variable height!
 // SKELETON CODE (Code Sample)
 
 function drawSymbolicColsBox(num) {
-  let number = 1;
+  // let number = 1;
 
+  // for (let i = 0; i < num; i++) {
+  //   let final = "";
+  //   for (let j = 0; j < num; j++) {
+  //     if (number % 3 === 0) {
+  //       final = final + "* ";
+  //     } else if (number % 2 === 0) {
+  //       final = final + "$ ";
+  //     } else {
+  //       final = final + "@ ";
+  //     }
+  //     number++;
+  //   }
+  //   console.log(final);
+  // }
+
+  let counter = 1;
   for (let i = 0; i < num; i++) {
-    let final = "";
+    // console.log(i);
+    let str = "";
     for (let j = 0; j < num; j++) {
-      if (number % 3 === 0) {
-        final = final + "* ";
-      } else if (number % 2 === 0) {
-        final = final + "$ ";
+      if (counter % 3 === 0) {
+        str = str + "* ";
+      } else if (counter % 2 === 0) {
+        str = str + "$ ";
       } else {
-        final = final + "@ ";
+        str = str + "@ ";
       }
-      number++;
+      counter++;
     }
-    console.log(final);
+    console.log(str);
   }
 }
 

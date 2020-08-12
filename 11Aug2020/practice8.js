@@ -19,6 +19,8 @@ output: 4
 */
 
 function secondLargest(angka) {
+  //console.log(secondLargest([5, 2, 1, 4]));
+  //nyari angka terbesar
   let largestNum = angka[0];
 
   for (let i = 0; i < angka.length; i++) {
@@ -27,6 +29,7 @@ function secondLargest(angka) {
     }
   }
 
+  //nyari angka kedua terbesar
   let secondNum;
   let diff = largestNum;
 
