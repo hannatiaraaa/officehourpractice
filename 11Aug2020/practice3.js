@@ -41,14 +41,25 @@ function addTitle(person1, person2, person3, person4) {
 }
 
 function changeSpacesWith(str, to) {
-  const newString = str.replace(" ", to);
+  let newString = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      newString = newString + str[i];
+    } else {
+      newString = newString + to;
+    }
+  }
   console.log(newString);
+  // const newString = str.replace(" ", to);
+  // console.log(newString);
 }
 
 function cutString(str) {
   let newString = "";
-  for (let i = 0; i < 6; i++) {
-    newString = newString + str[i];
+  for (let i = 0; i < str.length; i++) {
+    if (i <= 5) {
+      newString = newString + str[i];
+    }
   }
   console.log(newString);
 }
