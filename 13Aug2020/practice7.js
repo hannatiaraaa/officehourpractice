@@ -44,6 +44,7 @@ function productCategories(products) {
   }
   return categories;
 }
+
 console.log(
   productCategories([
     ["Mouse Logitech", 150000, "Mouse"],

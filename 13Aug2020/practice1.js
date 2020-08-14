@@ -38,7 +38,7 @@ function addEvenOdd(arrNum) {
     }
   }
 
-  return [odd, even];
+  return [[odd], [even]];
 }
 
 console.log(addEvenOdd([3, 5, 7, 8])); // [ [15], [8] ]

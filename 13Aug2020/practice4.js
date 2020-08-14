@@ -26,7 +26,9 @@ output: ['saya', 'dan', 'suka', 'makan', 'nasi']
 */
 
 function uniqueFinder(sentence) {
-  const lowerCaseSentence = sentence.toLowerCase();
+  const lowerCaseSentence = sentence.toLowerCase(); // jadiin semua lower case
+  // "hello hello hello hlloe"
+  // bikin array, yg isinya setiap kalimat [hello, hello, hello, hlleo]
   let newSentence = "";
   const sentenceArr = [];
   for (let i = 0; i < lowerCaseSentence.length; i++) {
@@ -34,11 +36,12 @@ function uniqueFinder(sentence) {
       sentenceArr.push(newSentence);
       newSentence = "";
     } else {
-      newSentence += lowerCaseSentence[i];
+      newSentence = newSentence + lowerCaseSentence[i];
     }
   }
   sentenceArr.push(newSentence);
 
+  //[hello, hello, hello, hlleo] => [hello, hlleo]
   const finalSentence = [];
   for (let i = 0; i < sentenceArr.length; i++) {
     let isDouble = false;
@@ -48,7 +51,7 @@ function uniqueFinder(sentence) {
       }
     }
     if (isDouble === false) {
-      finalSentence.push(sentenceArr[i]);
+      finalSentence.push(sentenceArr[i]); // [hello]
     }
   }
   if (finalSentence[0] === "") {
