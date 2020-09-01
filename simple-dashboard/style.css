@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* sidebar nav */
+
+.sidebar {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  background-color: #837b77;
+}
+
+.company-logo {
+  background-color: #6d460b;
+  color: white;
+  text-align: center;
+}
+
+.company-logo span {
+  font-size: 42px;
+  margin-top: 25px;
+}
+
+.company-logo p {
+  padding-bottom: 24px;
+  font-weight: bold;
+}
+
+.nav-item {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-item span {
+  padding-right: 15px;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background-color: #342104;
+}
+
+/* main dashboard */
+.dashboard {
+  grid-column-start: 2;
+  height: 100%;
+  margin-left: 220px;
+  background-color: #f3f3f3;
+  padding: 0 30px 32px;
+}
+
+.topbar {
+  height: 50px;
+  position: fixed;
+  left: 220px;
+  right: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.topbar p span {
+  font-weight: bold;
+}
+
+/* Content Header */
+.container {
+  padding-top: 83px;
+}
+
+.content-header,
+.content-main {
+  background-color: white;
+  padding: 28px 53px;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 32px;
+}
+
+.content-header h1 {
+  font-size: 16px;
+}
+
+.content-header h2 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #80848d;
+  padding-top: 4px;
+}
+
+.content-header p {
+  color: #25345a;
+  padding-top: 14px;
+  max-width: 400px;
+}
+
+/* Main content */
+
+.content-main {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.content-left {
+  padding-right: 20px;
+}
+
+.content-left h2,
+.content-right h2 {
+  font-size: 16px;
+}
+
+.content-left p,
+.content-right p {
+  padding-top: 27px;
+  max-width: 400px;
+}
