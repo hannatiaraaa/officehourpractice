@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 800px;
+  margin: 30px 30px 10px;
+}
+
+table thead {
+  background-color: lightcoral;
+  color: white;
+}
+
+table thead th {
+  height: 50px;
+}
+
+table tbody {
+  background-color: ivory;
+}
+
+table tbody tr {
+  height: 40px;
+}
+
+.button {
+  width: 800px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button button {
+  cursor: pointer;
+  padding: 0.5em;
+  border: none;
+  background-color: lightcoral;
+  color: white;
+}
